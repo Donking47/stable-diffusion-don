@@ -424,7 +424,7 @@ def configure_for_tests():
     if "--disable-nan-check" not in sys.argv:
         sys.argv.append("--disable-nan-check")
 
-    os.environ['COMMANDLINE_ARGS'] = "--skip-torch-cuda-test"
+    os.environ['COMMANDLINE_ARGS'] = ""
 
 
 def start():
